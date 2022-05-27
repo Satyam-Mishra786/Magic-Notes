@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #82DBD8;
+    color: white;
+    height: 30px;
+    padding: 20px 50px;
+    color: black;
+
+}
+
+h1 {
+    color: #6A67CE;
+}
+
+.leftNav {
+    display: flex;
+    align-items: center;
+}
+
+.magicNote {
+    margin-right: 30px;
+}
+
+.rightNav {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    padding: 5px;
+}
+
+.searchInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.searchInputenter {
+    padding: 3px;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.searchIcon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+main {
+    max-width: 70%;
+    margin: auto;
+    height: 100vh;
+}
+
+.noteMakingArea {
+    margin-top: 10px;
+    border: 3px solid lightgray;
+    padding: 10px;
+    box-shadow: 2px 2px lightgray 0.7;
+    border-radius: 5px;
+}
+
+.addTitle {
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 5px 15px;
+    margin-bottom: 16px;
+}
+
+.noteArea {
+    display: flex;
+    justify-content: center;
+}
+
+.addaNote {
+    font-weight: 300;
+    font-family: serif;
+}
+
+.noteInput {
+    width: 100%;
+    min-height: 80px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.addNote {
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #30db58, #2980b9);
+    border-radius: 4px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 19px;
+    padding: 11px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.addNote:hover {
+    background: #49bd22;
+    text-decoration: none;
+}
+
+.yourNotes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.yourNoteHead {
+    font-weight: 300;
+    font-family: serif;
+
+}
+
+.yourNotesCollection {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+
+}
+
+.notesCard {
+    border: 3px solid rgb(14, 69, 77);
+    display: flex;
+    margin: 2px;
+    flex-direction: column;
+    position: relative;
+    width: 28%;
+    /* height: 350px; */
+    margin-bottom: 40px;
+    padding: 10px;
+    /* overflow-y: scroll; */
+    position: relative;
+}
+
+.notesCardHead {
+    color: black;
+    cursor: pointer;
+}
+
+.deleteNote {
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #aed9f5, #0c4f78);
+    border-radius: 2px;
+    box-shadow: 1px 2px 9px #666666;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 6px;
+    text-decoration: none;
+    position: absolute;
+    bottom: -38px;
+    left: -2px;
+}
+
+.deleteNote:hover {
+    background: #0092ed;
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+@media screen and (max-width:850px) {
+    main {
+        max-width: 98%;
+    }
+
+    .yourNotesCollection {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .notesCard {
+        width: auto;
+    }
+
+    .notesPara {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .navbar {
+        height: 100px;
+        padding: 10px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main {
+        max-width: 98%;
+    }
+
+    .yourNotesCollection {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .notesCard {
+        width: auto;
+    }
+
+    .notesPara {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Icon" href="./img/edit.png">
+    <title>Magic Notes</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="leftNav">
+            <h2 class="magicNote">Magic Notes</h2>
+            <div class="home">Home</div>
+        </div>
+
+        <div class="rightNav">
+            <div class="searchInput">
+                <input class="searchInputenter" type="search" placeholder="Search...">
+                <img src="./img/search.png" class="searchIcon" alt="">
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+        <h1>Magic Notes</h1>
+        <div class="noteMakingArea">
+            <h3 class="addaNote">Add a Note</h3>
+            <input type="text" class="addTitle" id="title" placeholder="Add a Title">
+            <div class="noteArea">
+                <textarea name="Notes" class="noteInput" widht="max-width"
+                    placeholder="Write your notes here"></textarea>
+            </div>
+            <button class="addNote">Add Note</button>
+        </div>
+
+        <div class="yourNotes">
+            <h2 class="yourNoteHead">
+                Your Notes
+            </h2>
+            <hr style="background-color:black ; margin: 0 0 4px 0;">
+            <div class="yourNotesCollection">
+
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+
+    <script src="JS/app.js"></script>
+</body>
+
+</html>
